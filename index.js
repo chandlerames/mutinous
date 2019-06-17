@@ -26,6 +26,8 @@ app.get('/', (req, res) => {
 app.get('/dbTest', routeWrapper(data.healthCheck));
 app.get('/getPeople', routeWrapper(data.getPeople));
 
+app.get('/getPeople', routeWrapper(data.getPeople));
+
 app.listen(port, () => {
     console.log(`app listening on port ${port}`);
 });
